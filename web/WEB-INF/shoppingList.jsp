@@ -32,12 +32,9 @@
             <h2>Add Item</h2>
 
             <form method="POST" action="shoppingList">
-                <div class="mb-3">
-                    <label for="item" class="form-label">Item name</label>
-                    <input type="text" class="form-control" id="item" name="item" />
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary" type="submit">Add</button>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="item" placeholder="Add Item">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Add item</button>
                     <input type="hidden" name="action" value="addItem" />
                 </div>
             </form>

@@ -60,6 +60,7 @@ public class ShoppingListServlet extends HttpServlet {
             session.setAttribute("itemList", itemList);
             response.sendRedirect("shoppingList");
             return;
+            
         } else if (action.equals("delete")) {
             String item = request.getParameter("selectedItem");
             System.out.println(item);
